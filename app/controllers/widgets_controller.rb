@@ -1,4 +1,7 @@
 class WidgetsController < ApplicationController
+
+  before_filter :require_user
+
   # GET /widgets
   # GET /widgets.xml
   def index

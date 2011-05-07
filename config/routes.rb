@@ -1,6 +1,13 @@
 AuthlogicScratch::Application.routes.draw do
   resources :widgets
 
+  resource :user_session
+
+  resource :account, :controller => 'users'
+  resources :users
+
+  root :to => "widgets#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -9,7 +16,8 @@ AuthlogicScratch::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  #   match 'products/:id/purchase' => 'catalog#purchase', :a
+  #s => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
