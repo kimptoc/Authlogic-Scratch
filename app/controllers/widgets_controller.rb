@@ -10,6 +10,7 @@ class WidgetsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @widgets }
+      format.json  { render :json => @widgets }
     end
   end
 
@@ -21,6 +22,7 @@ class WidgetsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @widget }
+      format.json  { render :json => @widget }
     end
   end
 

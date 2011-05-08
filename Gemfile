@@ -4,11 +4,17 @@ gem 'rails', '3.0.7'
 
 gem 'authlogic'
 
+gem 'json'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+group :development, :test do
+  gem 'rest-client'
+
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
