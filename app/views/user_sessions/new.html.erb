@@ -11,4 +11,8 @@
   <%= f.check_box :remember_me %><%= f.label :remember_me %><br />
   <br />
   <%= f.submit "Login" %>
+
 <% end %>
+
+TODO - work out why this is being output as encoded text rather than "as-is"
+<%= authlogic_facebook_login_button "FBLogin", :controller => :user_sessions_controller %>

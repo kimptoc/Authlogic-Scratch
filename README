@@ -24,4 +24,4 @@ USEFUL LINKS
 - http://blog.ekynoxe.com/2009/11/04/api-token-access-with-authlogic-and-login/comment-page-1/#comment-2341
 
 TODO
-- add support for facebook, in particular via the API.
+- add support for facebook, in particular via the API.  Trying authlogic_facebook_connect first.
