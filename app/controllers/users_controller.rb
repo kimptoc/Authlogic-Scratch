@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml  }
+      format.xml  { render :xml => @user  }
       format.json  { render :json => @user }
     end
 
@@ -36,9 +36,20 @@ class UsersController < ApplicationController
     @user = @current_user # makes our views "cleaner" and more consistent
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account updated!"
-      redirect_to account_url
+
+      respond_to do |format|
+        format.html { redirect_to account_url } # show.html.erb
+        format.xml  { render :xml => @user }
+        format.json  { render :json => @user }
+      end
+
     else
-      render :action => :edit
+
+      respond_to do |format|
+        format.html { render :action => :edit } # show.html.erb
+        format.xml  { render :xml => "Error saving account" }
+        format.json  { render :json => "Error saving account" }
+      end
     end
   end
 

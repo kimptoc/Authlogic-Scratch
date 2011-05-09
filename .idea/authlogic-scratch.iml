@@ -76,6 +76,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.2, /Users/kimptoc/.rvm/gems/ree-1.8.7-2011.03@p-authlogic-scratch/gems/rack-1.2.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/kimptoc/.rvm/gems/ree-1.8.7-2011.03@p-authlogic-scratch/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/kimptoc/.rvm/gems/ree-1.8.7-2011.03@p-authlogic-scratch/gems/abstract-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json (vFile.read(&quot;VERSION&quot;).chomp, /Users/kimptoc/.rvm/gems/ree-1.8.7-2011.03@p-authlogic-scratch/gems/json-1.5.1)" level="application" />
   </component>
 </module>
 
