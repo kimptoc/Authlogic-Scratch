@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+
+  include Facebooker2::Rails::Controller
+
   protect_from_forgery
 
   helper_method :current_user_session, :current_user
