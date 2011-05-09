@@ -44,3 +44,4 @@ end
 
 #PLUGINS
 # https://github.com/mmangino/facebooker2
+# git://github.com/studybyte/authlogic_facebook_connect.git
