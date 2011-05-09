@@ -1,6 +1,6 @@
 This is a simple example using authlogic (https://github.com/binarylogic/authlogic) to show how to enable API type access to your Rails app.
 
-See the examples in the restclient directory for how the API would be used.
+See the examples in the lib/tasks/restclient directory for how the API would be used.
 
 This is probably a duplication of one of the examples in https://github.com/binarylogic/authlogic_example , but
 I could not find it.
@@ -24,5 +24,4 @@ USEFUL LINKS
 - http://blog.ekynoxe.com/2009/11/04/api-token-access-with-authlogic-and-login/comment-page-1/#comment-2341
 
 TODO
-- add a user via API- does it work?
 - add support for facebook, in particular via the API.

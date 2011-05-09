@@ -11,9 +11,19 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "Account registered!"
-      redirect_back_or_default account_url
+
+      respond_to do |format|
+        format.html { redirect_back_or_default account_url } # show.html.erb
+        format.xml  { render :xml => @user  }
+        format.json  { render :json => @user }
+      end
     else
-      render :action => :new
+
+      respond_to do |format|
+        format.html { render :action => :new } # show.html.erb
+        format.xml  { render :xml => "Error creating user"  }
+        format.json  { render :json => "Error creating user" }
+      end
     end
   end
 

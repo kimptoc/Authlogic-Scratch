@@ -1,4 +1,4 @@
-require 'json'
+task :do_login => :environment do
 
 site = "http://0.0.0.0:3000"
 
@@ -20,3 +20,5 @@ resp = RestClient.get site + "/account?user_credentials=#{SAT}", :accept => 'app
 puts "response was nil" if resp == nil
 resp.code unless resp == nil
 resp.cookies unless resp == nil
+
+end
