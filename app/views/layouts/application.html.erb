@@ -17,14 +17,6 @@
   <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
 <% end %>
 
-<%= fb_connect_async_js %>
-<% if current_facebook_user %>
-  <%= "Welcome #{current_facebook_user.first_name} #{current_facebook_user.last_name}!" %>
-  <%= fb_logout_link("Logout of fb", request.url) %><br>
-<% else %>
-  <%= fb_login_and_redirect('http://0.0.0.0:3000', :perms => 'email') %>
-<% end %>
-
 
 <%= render_flash %>
 

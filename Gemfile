@@ -6,9 +6,6 @@ gem 'authlogic'
 
 gem 'json'
 
-gem 'mogli'
-gem 'ruby-hmac'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -41,7 +38,3 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
-
-#PLUGINS
-# https://github.com/mmangino/facebooker2
-# git://github.com/studybyte/authlogic_facebook_connect.git

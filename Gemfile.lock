@@ -33,11 +33,8 @@ GEM
       activerecord (~> 3.0.7)
       activerecord (~> 3.0.7)
     builder (2.1.2)
-    crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    httparty (0.7.7)
-      crack (= 0.1.8)
     i18n (0.5.0)
     json (1.5.1)
     mail (2.2.19)
@@ -46,8 +43,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mogli (0.0.28)
-      httparty (>= 0.4.3)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -70,7 +65,6 @@ GEM
     rake (0.8.7)
     rest-client (1.6.1)
       mime-types (>= 1.16)
-    ruby-hmac (0.4.0)
     sqlite3 (1.3.3)
     thor (0.14.6)
     treetop (1.4.9)
@@ -83,8 +77,6 @@ PLATFORMS
 DEPENDENCIES
   authlogic
   json
-  mogli
   rails (= 3.0.7)
   rest-client
-  ruby-hmac
   sqlite3
